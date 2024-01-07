@@ -17,6 +17,7 @@
 		C91534A62B4AF7DE0040256B /* testprojectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91534A52B4AF7DE0040256B /* testprojectTests.swift */; };
 		C91534B02B4AF7DE0040256B /* testprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91534AF2B4AF7DE0040256B /* testprojectUITests.swift */; };
 		C91534B22B4AF7DE0040256B /* testprojectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91534B12B4AF7DE0040256B /* testprojectUITestsLaunchTests.swift */; };
+		C91534BF2B4B24200040256B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91534BE2B4B24200040256B /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C91534AB2B4AF7DE0040256B /* testprojectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testprojectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91534AF2B4AF7DE0040256B /* testprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testprojectUITests.swift; sourceTree = "<group>"; };
 		C91534B12B4AF7DE0040256B /* testprojectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testprojectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C91534BE2B4B24200040256B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				C91534992B4AF7DE0040256B /* LaunchScreen.storyboard */,
 				C915349C2B4AF7DE0040256B /* Info.plist */,
 				C91534942B4AF7DD0040256B /* testproject.xcdatamodeld */,
+				C91534BE2B4B24200040256B /* Helper.swift */,
 			);
 			path = testproject;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				C91534902B4AF7DD0040256B /* ViewController.swift in Sources */,
 				C915348C2B4AF7DD0040256B /* AppDelegate.swift in Sources */,
+				C91534BF2B4B24200040256B /* Helper.swift in Sources */,
 				C915348E2B4AF7DD0040256B /* SceneDelegate.swift in Sources */,
 				C91534962B4AF7DD0040256B /* testproject.xcdatamodeld in Sources */,
 			);
