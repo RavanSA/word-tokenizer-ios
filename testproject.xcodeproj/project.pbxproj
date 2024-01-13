@@ -18,6 +18,8 @@
 		C91534B02B4AF7DE0040256B /* testprojectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91534AF2B4AF7DE0040256B /* testprojectUITests.swift */; };
 		C91534B22B4AF7DE0040256B /* testprojectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91534B12B4AF7DE0040256B /* testprojectUITestsLaunchTests.swift */; };
 		C91534BF2B4B24200040256B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91534BE2B4B24200040256B /* Helper.swift */; };
+		C973BA812B52DDAF008F1446 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C973BA802B52DDAF008F1446 /* Tokenizer.swift */; };
+		C973BA832B52DE10008F1446 /* TokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C973BA822B52DE10008F1446 /* TokenizerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		C91534AF2B4AF7DE0040256B /* testprojectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testprojectUITests.swift; sourceTree = "<group>"; };
 		C91534B12B4AF7DE0040256B /* testprojectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testprojectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C91534BE2B4B24200040256B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C973BA802B52DDAF008F1446 /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		C973BA822B52DE10008F1446 /* TokenizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				C915349C2B4AF7DE0040256B /* Info.plist */,
 				C91534942B4AF7DD0040256B /* testproject.xcdatamodeld */,
 				C91534BE2B4B24200040256B /* Helper.swift */,
+				C973BA802B52DDAF008F1446 /* Tokenizer.swift */,
 			);
 			path = testproject;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C91534A52B4AF7DE0040256B /* testprojectTests.swift */,
+				C973BA822B52DE10008F1446 /* TokenizerTests.swift */,
 			);
 			path = testprojectTests;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91534902B4AF7DD0040256B /* ViewController.swift in Sources */,
+				C973BA812B52DDAF008F1446 /* Tokenizer.swift in Sources */,
 				C915348C2B4AF7DD0040256B /* AppDelegate.swift in Sources */,
 				C91534BF2B4B24200040256B /* Helper.swift in Sources */,
 				C915348E2B4AF7DD0040256B /* SceneDelegate.swift in Sources */,
@@ -277,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91534A62B4AF7DE0040256B /* testprojectTests.swift in Sources */,
+				C973BA832B52DE10008F1446 /* TokenizerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

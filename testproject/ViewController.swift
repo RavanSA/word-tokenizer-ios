@@ -61,6 +61,7 @@ final class ViewController: UIViewController {
     private var segmentedStrings: [String] = []
     private var dropdownOptions: [String : SupportedLanguages] = ["English": .english, "Spanish" : .spanish, "Turkish" : .turkish]
     private var selectedLanguage: SupportedLanguages = .english
+    private let tokenizer = Tokenizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,46 +98,6 @@ final class ViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
                
-    }
-
-    
-    private func tokenizeSentence(_ sentence: String, language: SupportedLanguages) -> [String] {
-        var separatorEnglish: [String] = []
-        
-        switch language {
-        case .english:
-            separatorEnglish = ["if", "and"]
-        case .spanish:
-            separatorEnglish = ["si", "y"]
-        case .turkish:
-            separatorEnglish = ["eğer", "ve"]
-        }
-        
-        var tokenizedStrings: [String] = []
-        var currentSegment = ""
-        
-        for char in sentence {
-            let charStr = String(char)
-            
-            currentSegment += charStr
-            
-            for separator in separatorEnglish {
-                if currentSegment.lowercased().hasSuffix(separator) {
-                    currentSegment = String(currentSegment.dropLast(separator.count))
-                    
-                    tokenizedStrings.append(currentSegment.trimmingCharacters(in: .whitespacesAndNewlines))
-                    
-                    currentSegment = separator + " "
-                    break
-                }
-            }
-        }
-        
-        if !currentSegment.isEmpty {
-            tokenizedStrings.append(currentSegment.trimmingCharacters(in: .whitespacesAndNewlines))
-        }
-        
-        return tokenizedStrings
     }
     
 }
@@ -199,18 +160,11 @@ extension ViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         if let text = textField.text {
-            segmentedStrings = tokenizeSentence(text, language: selectedLanguage)
+            segmentedStrings = tokenizer.tokenizeSentence(text, language: selectedLanguage)
             self.tableView.reloadData()
         }
         
         return true
     }
     
-}
-
-
-enum SupportedLanguages {
-    case english
-    case spanish
-    case turkish
 }
